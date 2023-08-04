@@ -1,1 +1,11 @@
-/* место для вашего кода */
+.header {
+    padding: 92px 49px 92px 51px;
+    display: flex;
+    justify-content: space-between;
+    gap: 209px;    
+}
+
+.header__menu {
+    display: grid;
+    grid-template-columns: 3 1fr;
+}
