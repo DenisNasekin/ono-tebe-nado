@@ -1,11 +1,244 @@
+/* Шапка*/
+
 .header {
-    padding: 92px 49px 92px 51px;
-    display: flex;
-    justify-content: space-between;
-    gap: 209px;    
+  width: 1440px;
+  padding: 92px 49px 92px 51px;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400; 
+  text-underline-offset: 4px;   
 }
 
 .header__menu {
-    display: grid;
-    grid-template-columns: 3 1fr;
+  justify-self: start;
+  align-self: center;
+}
+
+.header__links-list{
+  display: flex;
+  gap: 34px;
+  list-style:circle;  
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.header__logo-image {
+    
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  justify-self: end;
+  align-self: center;     
+}
+
+.header__address {  
+  font-style: normal;
+  line-height: 24.3px;   
+}
+
+/* Блок cover*/
+
+.cover {
+  width: 1440px;
+  background-image: url(/images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: 30px;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 98%;
+  left: 30px;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+  
+}
+
+.cover__title {
+  padding: 165px 20px 0 79px;
+  position: relative;
+  z-index: 2;
+}
+
+.aligned-text {
+  display: block;
+  font-size: 100px;
+  letter-spacing: 30px;
+  font-weight: 700;
+  line-height: 115%;
+  padding-bottom: 20px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.aligned-text_center {
+  text-align: center;
+  line-height: 100%;
+}
+
+.aligned-text_right {
+  text-align: right;
+  line-height: 100%;
+  letter-spacing: 60px;
+  padding-bottom: 135px;
+}
+
+.aligned-text-no-extended {
+  letter-spacing: 30px;
+
+}
+.no-letter-spacing {
+  letter-spacing: 0; 
+}
+
+.cover__description {
+ display: flex;
+ justify-content: center;
+ padding: 0 20px 50px 451px;
+ gap: 78px;
+ position: relative;
+ z-index: 2;
+}
+
+.cover__description-text {
+  align-self: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  line-height: 28px;
+  word-spacing:18px;
+}
+
+.bet-button {
+  width: 257px;
+  height: 52px;
+  border: 1px solid #FFF;
+  text-align: center;
+  background-color: transparent;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+/*Блок лоты*/
+
+.lots {
+  padding: 180px 50px 55px 50px;
+}
+
+.lots__heading {
+  padding: 0 0 27px 40px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-grow: 1;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  list-style-type: none;
+}
+
+.lots__card-list-item {
+  width: 430px;
+  min-height: 450px; 
+}
+
+.card-link {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  height: 100%;
+  
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  position: relative;
+  
+}
+
+.card .overlay {
+ width: 100%;
+ height: 100%;
+ left: 0;
+}
+
+.card_type_film {
+  background-image: url(/images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url(/images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url(/images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__title {
+  z-index: 2;
+  padding: 50px 40px 0 40px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.card__text {
+  z-index: 2;
+  padding: 0 40px 50px 40px;
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.lots__look-more-link {
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  text-underline-offset: 4px;
 }
