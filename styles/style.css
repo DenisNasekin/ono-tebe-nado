@@ -43,12 +43,9 @@
 
 .address {
   justify-self: end;
-  align-self: center;     
-}
-
-.header__address {  
+  align-self: center;  
   font-style: normal;
-  line-height: 24.3px;   
+  line-height: 24.3px;    
 }
 
 /* Блок cover*/
@@ -68,6 +65,8 @@
   position: absolute;
   height: 100%;
   width: 98%;
+  top: 0;
+  left: 0;
   left: 30px;
   background-color: rgba(0,0,0,0.6);
   z-index: 1;
@@ -127,7 +126,6 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-transform: uppercase;
   line-height: 28px;
   word-spacing:18px;
