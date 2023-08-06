@@ -282,3 +282,53 @@
   font-size: 20px;
   font-weight: 400;
 }
+
+/*Подвал*/
+
+.footer {
+  padding: 0px 50px 90px 50px;
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  text-underline-offset: 4px; 
+}
+
+.footer__menu {
+  list-style-type: none;
+}
+
+.footer__menu-list, .footer__social-list {
+  list-style-type: none;
+}
+
+.footer__menu-list{
+  text-align: center;
+}
+
+.footer__menu-link {
+  display: block;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.footer__social-link {
+  display: block;
+}
+
+.footer__social-icon {
+  
+  height: 48px;
+  flex-shrink: 0;
+}
