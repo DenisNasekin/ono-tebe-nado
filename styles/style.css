@@ -150,6 +150,7 @@
 /*Блок лоты*/
 
 .lots {
+  width: 1440px;
   padding: 180px 50px 55px 50px;
 }
 
@@ -241,4 +242,43 @@
   font-size: 20px;
   font-weight: 400;
   text-underline-offset: 4px;
+}
+
+/*блок about*/
+
+.about {
+  width: 1440px;
+  padding: 126px 50px 180px 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+}
+
+.about_logo {
+  margin-left: 96px;
+  display: flex;
+  border-radius: 100%;
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  padding: 102px 0 75px 0;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__text {
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: 400;
 }
