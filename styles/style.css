@@ -1,6 +1,8 @@
+
 /* Шапка*/
 
 .header {
+  margin: auto;
   width: 1440px;
   padding: 92px 49px 92px 51px;
   display: grid;
@@ -42,6 +44,7 @@
 }
 
 .address {
+  max-width: 240px;
   justify-self: end;
   align-self: center;  
   font-style: normal;
@@ -51,10 +54,11 @@
 /* Блок cover*/
 
 .cover {
+  margin: auto;
   width: 1440px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-position: 30px;
+  background-position: center;
   background-size: cover;
   position: relative;
   color: #fff;
@@ -64,17 +68,16 @@
 .overlay {
   position: absolute;
   height: 100%;
-  width: 98%;
+  width: 100%;
   top: 0;
   left: 0;
-  left: 30px;
   background-color: rgba(0,0,0,0.6);
   z-index: 1;
   
 }
 
 .cover__title {
-  padding: 165px 20px 0 79px;
+  padding: 165px 50px 0 50px;
   position: relative;
   z-index: 2;
 }
@@ -114,8 +117,8 @@
 
 .cover__description {
  display: flex;
- justify-content: center;
- padding: 0 20px 50px 451px;
+ justify-content: flex-end;
+ padding: 0 50px 50px 50px;
  gap: 78px;
  position: relative;
  z-index: 2;
@@ -149,6 +152,7 @@
 
 .lots {
   width: 1440px;
+  margin: auto;
   padding: 180px 50px 55px 50px;
 }
 
@@ -246,6 +250,7 @@
 
 .about {
   width: 1440px;
+  margin: auto;
   padding: 126px 50px 180px 50px;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -284,6 +289,7 @@
 /*Подвал*/
 
 .footer {
+  margin: auto;
   padding: 0px 50px 90px 50px;
   width: 1440px;
   display: flex;
