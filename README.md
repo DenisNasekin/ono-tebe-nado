@@ -1,3 +1,4 @@
+![image](https://github.com/DenisNasekin/ono-tebe-nado/assets/140427738/bf4c12a9-0119-46f9-a552-4ababdc6be53)
 
 # Проектная работа ono-tebe-nado
 Проект выполнен в рамках учебного курса "Фронтенд разработчик" Яндекс.Практикума<br>
